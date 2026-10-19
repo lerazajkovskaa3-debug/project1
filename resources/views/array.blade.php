@@ -19,6 +19,11 @@
 
     <main>
         <h1>Каталог товаров</h1>
+        <p>
+            <a href="{{ route('array.shuffle') }}">Перемешать массив</a>
+            <a href="{{ route('array.sort') }}">Сортировать по цене</a>
+            <a href="{{ route('array.filter') }}">Товары дороже 1000</a>
+        </p>
         <div class="products">
             @foreach ($array as $item)
             <div class="product">
