@@ -55,4 +55,9 @@ class MainController extends Controller
         });
     return view('array', compact('array'));
     }
+
+    public function new(){
+        $array = $this->array[0];
+        return view('vtoraya', compact('array'));
+    }
 }

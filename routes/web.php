@@ -12,3 +12,5 @@ Route::get('/array/shuffle', [MainController::class, 'shuffleArray'])->name('arr
 Route::get('/array/sort', [MainController::class, 'sortArray'])->name('array.sort');
 
 Route::get('/array/filter', [MainController::class, 'filterArray'])->name('array.filter');
+
+Route::get('/array/new',[MainController::class, 'new'])->name('array.new');
