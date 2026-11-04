@@ -15,7 +15,8 @@
 
         <h2>Создание заявления</h2>
 
-        <form>
+        <form method="POST" action="{{ route('reports.store') }}">
+            @csrf
             <p>
                 <label for="number">Номер автомобиля</label><br>
                 <input type="text" id="number" name="number" placeholder="Введите номер">
@@ -26,7 +27,7 @@
                 <textarea id="description" name="description" rows="5" placeholder="Опишите нарушение"></textarea>
             </p>
 
-            <button type="button">Создать</button>
+            <button type="submit">Создать</button>
         </form>
     </main>
     <footer>2026</footer>

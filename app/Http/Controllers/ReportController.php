@@ -16,4 +16,15 @@ class ReportController extends Controller
         $report -> delete();
         return redirect() -> back();
     }
+
+    public function store(Request $request, Report $report)
+    {
+        $data = $request->validate([
+            'number' => 'string',
+            'description' => 'string',
+        ]);
+
+        $report->create($data);
+        return redirect()->back();
+    }
 }
