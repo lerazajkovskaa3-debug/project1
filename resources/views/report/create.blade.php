@@ -15,7 +15,7 @@
 
         <h2>Создание заявления</h2>
 
-        <form method="POST" action="{{ route('reports.store') }}">
+        <form class = "report-form" method="POST" action="{{ route('reports.store') }}">
             @csrf
             <p>
                 <label for="number">Номер автомобиля</label><br>

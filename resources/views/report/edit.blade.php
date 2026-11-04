@@ -15,7 +15,7 @@
 
         <h2>Редактирование заявления</h2>
 
-        <form method="POST" action="{{ route('reports.update', $report->id) }}">
+        <form class = "report-form" method="POST" action="{{ route('reports.update', $report->id) }}">
             @csrf
             @method('PUT')
             <p>

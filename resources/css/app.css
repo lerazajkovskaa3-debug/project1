@@ -62,3 +62,42 @@ footer {
     border-radius: 5px;
     text-decoration: none;
 }
+
+.report-form {
+    max-width: 550px;
+    margin-top: 20px;
+}
+
+.report-form p {
+    margin-bottom: 20px;
+}
+
+.report-form label {
+    font-weight: bold;
+}
+
+.report-form input,
+.report-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: white;
+    color: #222;
+}
+
+.report-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.report-form button {
+    padding: 12px 24px;
+    background-color: #d62828;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
