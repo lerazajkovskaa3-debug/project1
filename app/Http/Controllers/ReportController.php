@@ -27,4 +27,20 @@ class ReportController extends Controller
         $report->create($data);
         return redirect()->back();
     }
+
+    public function edit(Report $report)
+    {
+        return view('report.edit', compact('report'));
+    }
+
+    public function update(Request $request, Report $report)
+    {
+        $data = $request->validate([
+            'number' => 'string',
+            'description' => 'string',
+        ]);
+
+        $report->update($data);
+        return redirect()->back();
+    }
 }

@@ -23,6 +23,9 @@
                 <p>Дата создания: {{ $report->created_at }}</p>
                 <h3>Номер автомобиля: {{ $report->number }}</h3>
                 <p>Описание нарушений: {{ $report->description }}</p>
+                <p>
+                    <a href="{{ route('reports.edit', $report->id) }}">Редактировать</a>
+                </p>
             <form method="POST" action = "{{route('reports.destroy', $report->id)}}">
                 @method('delete')
                 @csrf
