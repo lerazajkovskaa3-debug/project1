@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Report;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<Report>
+ */
+class ReportFactory extends Factory
+{
+    public function definition(): array
+    {
+        $faker = \Faker\Factory::create();
+        return [
+            'number' => $faker->numerify('aaa-###'),
+            'description' => $faker->paragraph,
+            'created_at' => $faker->dateTimeBetween('-1 week', 'now'),
+            'status_id' => 1
+        ];
+    }
+}
