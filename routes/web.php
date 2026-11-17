@@ -26,3 +26,4 @@ Route::get('/reports/{report}/edit', [ReportController::class, 'edit'])->name('r
 
 Route::put('reports/{report}', [ReportController::class, 'update'])->name('reports.update');
 
+
